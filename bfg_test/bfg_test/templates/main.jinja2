@@ -11,26 +11,26 @@ Main</a></p>
 <h2>Result entries</h2>
 
 
-	<table>
-		<tr>
-			<th>ID</th>
-			<th>Date and Time</th>
-			<th>Title</th>
-			<th>Link</th>
-		</tr>
-		{% for entry in paginator.items %}
-			<tr>
-				
-				<td {{ entry.id }}></td>
-				<td {{ entry.dt }}></td>
-				<td {{ entry.title }}></td>
-				<td> <a href="http://localhost:6543/result?query=${entry.title}" role="button">Look</a></td>
-		            
-			</tr>
-		{% endfor %}
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Date and Time</th>
+		<th>Title</th>
+		<th>Link</th>
+	</tr>
+	{% for entry in paginator.items %}
+	<tr>
+		
+		<td {{ entry.id }}></td>
+		<td {{ entry.dt }}></td>
+		<td {{ entry.title }}></td>
+		<td> <a href="http://localhost:6543/result?query=${entry.title}" role="button">Look</a></td>
+		
+	</tr>
+	{% endfor %}
 
 
-	</table>
+</table>
 
 
 
